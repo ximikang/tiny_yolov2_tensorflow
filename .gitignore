@@ -1,2 +1,3 @@
 .vscode/*
-.data/*
+data/*
+*/__pycache__/*

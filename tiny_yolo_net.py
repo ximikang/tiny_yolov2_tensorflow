@@ -2,7 +2,6 @@ import sys, os, time
 import math
 import tensorflow as tf
 import numpy as np
-import cv2
 
 input_height = 416
 input_width = 416

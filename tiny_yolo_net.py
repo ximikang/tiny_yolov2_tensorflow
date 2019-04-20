@@ -14,7 +14,6 @@ with tf.name_scope('input'):
                                           input_height,
                                           input_width,
                                           3])
-    labels = tf.placeholder(tf.float32, shape=[n_input_imgs, 1])
 
 
 def weight_variable(shape):
@@ -122,6 +121,5 @@ n_params = n_params + 3*3*1024*1024 + 1024*4
 #conv1 13*13*1024 -> 13*13*125
 w9 = weight_variable([1, 1, 1024, 125])
 b9 = bias_variable([125])
-c9 = conv2_layer(conv8, w9) + b9
-net = c9
+net_out = conv2_layer(conv8, w9) + b9
 n_params = n_params + 1*1*1024*125 + 125

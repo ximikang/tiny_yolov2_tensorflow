@@ -125,5 +125,3 @@ b9 = bias_variable([125])
 c9 = conv2_layer(conv8, w9) + b9
 net = c9
 n_params = n_params + 1*1*1024*125 + 125
-
-print(n_params)
